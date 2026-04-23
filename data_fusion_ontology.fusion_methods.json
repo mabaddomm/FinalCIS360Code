@@ -1,0 +1,255 @@
+[{
+  "_id": "a4ce4db8-ef8e-48dd-b691-6199eb2fd3d3",
+  "method_name": "TransT",
+  "paper_doi": "10.1109/TPAMI.2022.3232535",
+  "description": "TransT is an attention-based feature fusion tracking method which uses a Siamese-like backbone and then combines template and search region features using self-attention and cross-attention mechanisms to produce accurate visual object tracking results.",
+  "uncertainty": {
+    "U1_conception": "Assumptions made that attention-based similarity between template and search region adequately represents real-world tracking scenarios. Method does not account for drastic appearance changes or heavily occluded targets.",
+    "U3_analysis": "Model performance is heavily dependent on benchmark dataset selection. The correlation-based matching process may fall into local optima. Effects of varying the number of templates in TransT-M and the IoU threshold for the prediction head have not been fully investigated across diverse real-world environments."
+  },
+  "dataset_ids": [
+    "6e52aa5eb7cecbf8c354bf09d1e615c0"
+  ]
+},
+{
+  "_id": "6ded06eb-bccb-4dc1-8334-1207bd202ff5",
+  "method_name": "Math-Data Integrated Prediction (MDIP)",
+  "paper_doi": "10.1016/j.oceaneng.2023.115255",
+  "description": "MDIP is a hybrid fusion method that combines a variable-order mathematical model using Taylor expansion and Extended Kalman Filter with a data-driven LS-SVM model to predict ship maneuvering motion. The two models are integrated via summation and neural network approximation.",
+  "uncertainty": {
+    "U1_conception": "Assumes that Taylor expansion adequately captures hydrodynamic derivatives. Real-world environmental conditions such as wind, waves, and currents are not fully modeled.",
+    "U3_analysis": "The LS-SVM approximation of prediction residuals may introduce errors under unseen maneuvering conditions. Model generalization across different ship types and loading conditions has not been fully validated."
+  },
+  "dataset_ids": [
+    "789a9d83d1c3df102e961722d054f507"
+  ]
+},
+{
+  "_id": "bc2c9693-7f8f-4723-9546-e8478b643d9a",
+  "method_name": "MODC-MMFL (Multi-scale One-Dimensional Convolution Multi-Model Fusion Learning)",
+  "paper_doi": "10.1016/j.jmsy.2023.07.007",
+  "description": "MODC-MMFL is a multi-sensor fusion method that adaptively extracts multi-scale local features from sensor signals using a multi-scale 1D convolution network, then fuses features learned in parallel by a DATCN and SBIGRU network via a fusion layer to predict tool wear values.",
+  "uncertainty": {
+    "U1_conception": "Assumes that multi-sensor signals adequately represent tool wear state. Does not account for variations in tool material, workpiece material, or cutting environment outside tested conditions.",
+    "U3_analysis": "Model performance is sensitive to hyperparameter tuning. Gaussian noise was artificially added to simulate industrial noise, which may not fully represent all real-world noise conditions. Generalization across machining processes beyond the PHM and NASA datasets has not been fully validated."
+  },
+  "dataset_ids": [
+    "12ae28f58ef4631bde683d94c6684470",
+    "ec1bf80fb3ba416ad1efe1a9588be8e9"
+  ]
+},
+{
+  "_id": "a7e5637d-afd9-4c5c-a45a-ceada7e389bf",
+  "method_name": "UNTIE (Multi-view Disentangled Representation Learning)",
+  "paper_doi": "10.1016/j.inffus.2023.101937",
+  "description": "UNTIE is a multi-view clustering method that disentangles view-common and view-private information using discrete and continuous latent variables respectively, then fuses the useful information from both representations to perform comprehensive clustering and controllable sample generation.",
+  "uncertainty": {
+    "U1_conception": "Assumes that information across views can be cleanly separated into \"common\" and \"private\" components. In practice the boundary between shared and private information may be ambiguous and hard to define.",
+    "U3_analysis": "The model's performance depends heavily on the quality of the learned disentanglement. If views contain highly correlated noise, the separation of meaningful and meaningless information may not be accurate, leading to clustering errors."
+  },
+  "dataset_ids": [
+    "f4dfa58a105bb148c0b3864b33c31a6b"
+  ]
+},
+{
+  "_id": "746cfddc-42ae-4a12-9fb1-38efa7a05e29",
+  "method_name": "DFNet (Decomposition Fusion Network)",
+  "paper_doi": "10.1016/j.knosys.2023.110794",
+  "description": "DFNet is a time-series forecasting model that decomposes sequences into trend, seasonal, and irregular components using a three-branch decomposition method, then fuses the extracted long-term dependencies using an information fusion transfer mechanism to enhance prediction accuracy.",
+  "uncertainty": {
+    "U1_conception": "Assumes that time series can be cleanly decomposed into trend, seasonal, and irregular components. Real-world data may not conform neatly to these categories, introducing ambiguity in the decomposition process.",
+    "U3_analysis": "The least squares method used for seasonal correction may introduce fitting errors. The segmented polynomial activation function is a simplification that may not fully capture nonlinear patterns. Model generalization across domains beyond the nine tested datasets has not been fully validated."
+  },
+  "dataset_ids": [
+    "0a7e289edb21dcbe2e18a08cb2fa66bc",
+    "1237a8c95b0f776d49fed4db6154b449",
+    "3ec1cff79deb736252b68b5281e76139",
+    "71f621bfabaaae70ab79d9a89fa21c67",
+    "bd169011ca01c1b2ac8f86b1cccfae57"
+  ]
+},
+{
+  "_id": "1de10888-d381-4a40-9f51-727c013d420d",
+  "method_name": "Frequency-Aware Attention and Adaptive Feature Fusion Network",
+  "paper_doi": "10.1109/TGRS.2022.3152854",
+  "description": "DFAF-Net is a deep learning framework designed for dual-frequency PolSAR image classification. It consists of: Joint Feature Extraction (JFE) module for extracting shared representations from concatenated dual-frequency input. Frequency-Aware Attention Blocks (FAB) that generate frequency-specific attention masks to highlight discriminative features. Adaptive Feature Fusion Block (AFFB) that fuses frequency-aware features using multiple fusion strategies (summation, product, max pooling, and 1×1 convolution). Final softmax classifier for land cover prediction. The model leverages complementary information between frequency bands to enhance class separability and reduce misclassification.",
+  "uncertainty": {
+    "U1_conception": "Multi-frequency fusion reduces conceptual ambiguity in land-cover representation.",
+    "U3_analysis": "Attention-based adaptive fusion reduces algorithmic misclassification and processing bias."
+  },
+  "dataset_ids": [
+    "53f30fb2a1bb42a1efedcb6d06acd16b"
+  ]
+},
+{
+  "_id": "25fa227e-2111-4779-baa2-d4faa56dc1aa",
+  "method_name": "Multimodal Data Integration Framework",
+  "paper_doi": "10.1186/s12859-022-04584-3",
+  "description": "A Service-Oriented Architecture (SOA)-based data management framework integrating: OMERO (image data management), openBIS (omics data management), qPortal (web-based frontend platform). The system implements interoperable metadata models and middleware components to enable FAIR-compliant storage, querying, and cross-modal access to imaging and multi-omics datasets.",
+  "uncertainty": {
+    "U1_conception": "Multi-omics and imaging modalities represent biological systems differently; integration reduces conceptual fragmentation across modalities.",
+    "U3_analysis": "Metadata coupling and standardized data representation reduce ambiguity in downstream computational workflows and machine learning analysis."
+  },
+  "dataset_ids": [
+    "4782cc34330c5302a539fd4863e5d144"
+  ]
+},
+{
+  "_id": "10b6bee5-26e7-4c7e-b641-f51171c8139e",
+  "method_name": "Multisource Data Fusion Framework",
+  "paper_doi": "10.1109/TIM.2022.3214300",
+  "description": "A fusion-based measurement framework integrating heterogeneous sensor data sources to enhance accuracy, robustness, and reliability in instrumentation systems. The approach combines multisource signals using algorithmic fusion strategies to reduce uncertainty and measurement error.",
+  "uncertainty": {
+    "U1_conception": "reduces ambiguity by integrating complementary sensing modalities.",
+    "U3_analysis": "fusion algorithms reduce model uncertainty and improve inference reliability."
+  },
+  "dataset_ids": [
+    "c56fe833b35f3ae9439af95d764bd729"
+  ]
+},
+{
+  "_id": "6e4449b2-1581-4a6c-9b5f-c58e6f6e9493",
+  "method_name": "Multitemporal Semantic Change Detection",
+  "paper_doi": "10.1109/JSTARS.2022.3144318",
+  "description": "A framework for detecting semantic land-cover changes using multitemporal remote sensing imagery, evaluated through the IEEE GRSS Data Fusion Contest Track MSD dataset and benchmark tasks.",
+  "uncertainty": {
+    "U1_conception": "land-cover semantics and change categories introduce abstraction ambiguity.",
+    "U3_analysis": "semantic segmentation and change-detection algorithms introduce model uncertainty."
+  },
+  "dataset_ids": [
+    "da798612996e0f8ead34033d6a3acbac"
+  ]
+},
+{
+  "_id": "435172f3-b401-49aa-8911-3f54471d954b",
+  "method_name": "Multi-Source Information Fusion Evaluation",
+  "paper_doi": "10.1007/s13369-021-06359-z",
+  "description": "A disaster-risk evaluation framework that fuses multiple monitoring indicators and prediction outputs using support vector machines, evidential reasoning, and cloud models to assess tunneling collapse risk.",
+  "uncertainty": {
+    "U1_conception": "tunnel collapse risk modeling requires abstraction of geotechnical conditions.",
+    "U3_analysis": "prediction models and evidential reasoning introduce algorithmic uncertainty."
+  },
+  "dataset_ids": [
+    "73dff3d7947f06d0a7453d75e809a423"
+  ]
+},
+{
+  "_id": "56651318-1406-4923-86e9-63e45c352022",
+  "method_name": "Digital Twin Integration Paradigm (or DT Multiverse Framework)",
+  "paper_doi": "10.1016/j.compind.2021.103501",
+  "description": "A conceptual framework that harmonizes multiple Digital Twin models by integrating data, models, and communication layers into a unified paradigm, supported by a proposed toolset architecture.",
+  "uncertainty": {
+    "U1_conception": "Assumes interoperability and standardization across DT systems",
+    "U3_analysis": "Lacks empirical validation; scalability and real-world implementation unclear"
+  },
+  "dataset_ids": []
+},
+{
+  "_id": "0eb06b7e-0e62-4669-8e5c-e9ab6a8a019a",
+  "method_name": "Open Science Vessel Tracking Data Integration Framework",
+  "paper_doi": "10.1016/j.ecoinf.2021.101384",
+  "description": "An Open Science-based framework integrating heterogeneous fisheries, biodiversity, and environmental FAIR data to infer fishing activity and assess risks to impacted species using scalable and reproducible infrastructure.",
+  "uncertainty": {
+    "U1_conception": "Assumes heterogeneous fisheries, biodiversity, and environmental data can be integrated under FAIR principles and that vessel tracking data accurately reflects fishing activity and ecological impact.",
+    "U3_analysis": "Data heterogeneity, accessibility constraints, and scalability challenges may affect integration accuracy and performance; reliance on vessel tracking data introduces uncertainty in inferring fishing activity; confidentiality issues may limit data completeness and real-world applicability"
+  },
+  "dataset_ids": []
+},
+{
+  "_id": "2130dd4c-9959-4b0c-8e30-945198f8cea4",
+  "method_name": "emantic Web-based Infrastructure Integration Framework",
+  "paper_doi": "10.1016/j.autcon.2021.103852",
+  "description": "A Semantic Web-based framework that integrates heterogeneous infrastructure data using ontology modeling, common semantic data formats, semantic querying, and rule-based logical reasoning to support resilience decision-making across interdependent systems.",
+  "uncertainty": {
+    "U1_conception": "Assumes ontology-based models can accurately represent interdependent infrastructure systems and that heterogeneous data can be integrated into a common semantic format for effective querying and reasoning.",
+    "U3_analysis": "Ontology design complexity, data integration challenges, and scalability issues may limit performance; rule-based reasoning may oversimplify real-world dynamics; limited validation beyond case study."
+  },
+  "dataset_ids": []
+},
+{
+  "_id": "17e18cf1-7667-4ddd-ad7b-b9de0dfc0ae4",
+  "method_name": "Orientation-dependent Topology Optimization with Fatigue Criterion",
+  "paper_doi": "10.1007/s00158-021-02995-z",
+  "description": "A topology optimization method that incorporates orientation-dependent fatigue criteria for additively manufactured metals, where print plane orientation is treated as a design variable and integrated with an improved fatigue damage formulation to enhance accuracy and computational efficiency.",
+  "uncertainty": {
+    "U1_conception": "Assumes transversely isotropic material behavior and that fatigue performance can be accurately modeled based on print orientation and FE simulations.",
+    "U3_analysis": "Data heterogeneity, limited accessibility, and scalability challenges may affect performance; inference of fishing activity introduces uncertainty; limited validation across regions."
+  },
+  "dataset_ids": []
+},
+{
+  "_id": "566a4209-abb5-459e-99b4-341dc7bce86d",
+  "method_name": "Reference-based t-SNE Embedding",
+  "paper_doi": "10.1007/s10994-021-06043-1",
+  "description": "A reference-based embedding method that uses a t-SNE visualization of a primary dataset as a fixed scaffold to independently embed new data points from secondary datasets, thereby reducing batch effects and enabling consistent visualization and classification across heterogeneous high-dimensional datasets.",
+  "uncertainty": {
+    "U1_conception": "Assumes reference dataset is representative and t-SNE preserves meaningful structure; assumes independent embedding mitigates batch effects.",
+    "U3_analysis": "Dependent on reference dataset quality; limited handling of novel classes; t-SNE scalability and global structure limitations; ignores interactions within new data."
+  },
+  "dataset_ids": []
+},
+{
+  "_id": "06c83b43-949f-4764-9ef7-ac41af3a0586",
+  "method_name": "KDMvC (Knowledge distillation-driven semi-supervised multi-view classification)",
+  "paper_doi": "10.1016/j.inffus.2023.102098",
+  "description": "Description: \"This work proposes a novel algorithm termed knowledge distillation-driven semi-supervised multi-view classification (KDMvC for short). The framework is illustrated in Fig. 1. Specifically, this work proposes a view-specific feature extractor for each view to perceive informative features through the gating strategy. This approach is robust against low-quality views and enables the extraction of discriminative representations. A self-knowledge distillation module is designed to drive multi-view information interaction, enabling mutual learning and enhancing the discriminability of multi-view unified and specific representations. Initially, the view-specific feature extractor is treated as the student, while the multi-view fusion network serves as the teacher. The teacher model integrates multi-view information and transfers complementary knowledge to the student model via knowledge distillation loss. Therefore, the discriminative power of the view-specific representation is improved, simultaneously refining the unified representation. Later, the roles of the teacher and student are reversed, forming a multi-teacher one-student framework. The ensemble learning module integrates information from multiple views and filters out high-confidence supervised information to refine the learning of unified representations. Additionally, a class-aware contrastive module is proposed to clarify the classification structure.\"",
+  "uncertainty": {
+    "U1_conception": "Traditional semi-supervised multi-view classification methods have \"limited representation learning capabilities\" and struggle with \"difficulty of transferring complementary information and fusing multiple views with limited supervised information.\" The proposed KDMvC method aims to address these limitations by introducing a self-knowledge distillation strategy to generate additional supervised information and using a gating strategy with sparse regularization to dynamically weight and select informative features, thus mitigating the impact of low-quality or irrelevant features.",
+    "U3_analysis": "\"Confirmation bias often leads to overfitting on self-generated data\""
+  },
+  "dataset_ids": [
+    "bca9051d8429223368560de9666a0132"
+  ]
+},
+{
+  "_id": "1684b687-d3c6-401e-b7d7-45baa84f1091",
+  "method_name": "Dynamic Collective Opinion Generation Framework (COG‑PEA‑SNA)",
+  "paper_doi": "10.1016/j.inffus.2023.102100",
+  "description": "It generates dynamic weights for transformation barriers using",
+  "uncertainty": {
+    "U1_conception": "Reliance on subjective expert evaluations without objective benchmarks",
+    "U3_analysis": "Errors from assumed loss function λ = |γ − ω|"
+  },
+  "dataset_ids": [
+    "97780e33e0415052237c5a24bb8af571"
+  ]
+},
+{
+  "_id": "d8b2d881-23d1-466c-83a0-74f1ad99b8f0",
+  "method_name": "DANT‑GAN (Dual Attention-Based Nested Training GAN)",
+  "paper_doi": "10.1016/j.dsp.2023.104316",
+  "description": "A nested dual-attention infrared–visible image fusion GAN consisting of:",
+  "uncertainty": {
+    "U1_conception": "Assumes patch-based self-attention adequately represents local semantic structure.",
+    "U3_analysis": "Training stability of nested LAE–GAF loops may vary due to adversarial dynamics."
+  },
+  "dataset_ids": [
+    "3ab0382c1ab243237afd39fea6d6c07b"
+  ]
+},
+{
+  "_id": "efece898-32da-41f7-8ee5-1c483f24a1e9",
+  "method_name": "MIF‑Autoformer (Multisource Information Fusion Autoformer)",
+  "paper_doi": "10.1109/TII.2023.3248059",
+  "description": "A hybrid soft‑sensor model combining:Feature‑level fusion of shallow expert‑defined image features and deep SE‑ResNet image features.Data‑level fusion aligning image and numerical process data via backtracking strategy.Autoformer time‑series modeling with added prior quality information from image‑based classification.",
+  "uncertainty": {
+    "U1_conception": "Expert‑defined shallow features may oversimplify thermal–state interpretation.Assumptions that extracted image features fully represent combustion layer behavior.Conceptual assumption that FeO grade classification provides reliable long‑term trend prior.",
+    "U3_analysis": "Autoformer performance sensitive to hyperparameters (learning rate, sequence length, parameter a).Possible overfitting due to SE‑ResNet parameter size vs dataset size (2379 samples).Image classification results used for prior trend may introduce compounded error if misclassified.Processing errors possible from dust occlusion and varying sinter geometry during image capture."
+  },
+  "dataset_ids": [
+    "be53640032e8f8b6b4dff9f2673a9f7c"
+  ]
+},
+{
+  "_id": "2096b91c-f368-493f-bcad-cb8e26e166e7",
+  "method_name": "Integrated Community Occupancy Model (ICOM)",
+  "paper_doi": "10.1111/1365-2656.14012",
+  "description": "A hierarchical community occupancy model that merges replicated and non‑replicated detection–nondetection datasets across multiple bird species. Links species‑specific occupancy and detection parameters through community‑level distributions.",
+  "uncertainty": {
+    "U1_conception": "Paper‑Level Uncertainty — Conceptual",
+    "U3_analysis": "Model performance sensitive to spatial misalignment across datasets.Imperfect detection modeling depends on correctly specified covariates.Rare species may have wide credible intervals."
+  },
+  "dataset_ids": [
+    "aec188254b985eaf3126bdee1f67653d"
+  ]
+}]

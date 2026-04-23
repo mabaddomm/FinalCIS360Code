@@ -1,0 +1,39 @@
+MongoDB Installation Guide (Ubuntu)
+
+1.  Check your Ubuntu version cat /etc/lsb-release
+
+2.  Remove old MongoDB repo files sudo rm -f
+    /etc/apt/sources.list.d/mongodb-org-*.list
+
+3.  Install required tools sudo apt update sudo apt install -y curl
+    gnupg
+
+4.  Add MongoDB public key curl -fsSL
+    https://pgp.mongodb.com/server-8.0.asc | sudo gpg -o
+    /usr/share/keyrings/mongodb-server-8.0.gpg –dearmor
+
+5.  Add MongoDB repository (replace with your version)
+
+For Ubuntu 24.04: echo “deb [
+signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ]
+https://repo.mongodb.org/apt/ubuntu noble/mongodb-org/8.0 multiverse” |
+sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+
+For Ubuntu 22.04: echo “deb [
+signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ]
+https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/8.0 multiverse” |
+sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+
+For Ubuntu 20.04: echo “deb [
+signed-by=/usr/share/keyrings/mongodb-server-8.0.gpg ]
+https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/8.0 multiverse” |
+sudo tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+
+6.  Update package list sudo apt update
+
+7.  Install MongoDB sudo apt install -y mongodb-org
+
+8.  Start MongoDB service sudo systemctl start mongod sudo systemctl
+    enable mongod sudo systemctl status mongod
+
+9.  Connect using MongoDB Compass mongodb://localhost:27017

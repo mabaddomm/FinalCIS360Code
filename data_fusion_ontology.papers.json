@@ -1,0 +1,526 @@
+[{
+  "_id": "10.1109/TPAMI.2022.3232535",
+  "title": "High-Performance Transformer Tracking",
+  "authors": [
+    "Xin Chen",
+    "Bin Yan",
+    "Jiawen Zhu",
+    "Huchuan Lu",
+    "Xiang Ruan",
+    "Dong Wang"
+  ],
+  "publication_title": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "publication_date": "2023-07-01",
+  "url": "https://doi.org/10.1109/TPAMI.2022.3232535",
+  "keywords": [
+    "Visual object tracking",
+    "transformer",
+    "attention mechanism",
+    "feature fusion",
+    "Siamese network",
+    "self-attention",
+    "cross-attention",
+    "TransT"
+  ],
+  "abstract": "Correlation has a critical role in the tracking field, especially in recent popular Siamese-based trackers. The correlation operation is a simple fusion method that considers the similarity between the template and the search region. However, the correlation operation is a local linear matching process, losing semantic information and easily falling into a local optimum, which may be the bottleneck in designing high-accuracy tracking algorithms. In this work, to determine whether a better feature fusion method exists than correlation, a novel attention-based feature fusion network, inspired by the transformer, is presented. This network effectively combines the template and search region features using attention mechanism. Specifically, the proposed method includes an ego-context augment module based on self-attention and a cross-feature augment module based on cross-attention. First, we present a transformer tracking (named TransT) method based on the Siamese-like feature extraction backbone, the designed attention-based fusion mechanism, and the classification and regression heads. Based on the TransT baseline, we also design a segmentation branch to generate the accurate mask. Finally, we propose a stronger version of TransT by extending it with a multi-template scheme and an IoU prediction head, named TransT-M. Experiments show that our TransT and TransT-M methods achieve promising results on seven popular benchmarks. Code and models are available at https://github.com/chenxin-dlut/TransT-M.",
+  "publisher": "IEEE",
+  "field_of_study": [
+    "Computer Vision",
+    "Machine Learning"
+  ],
+  "is_data_fusion": true,
+  "classification_reason": "Uses feature-level fusion combining template and search region features via transformer attention mechanism across seven benchmark datasets"
+},
+{
+  "_id": "10.1016/j.oceaneng.2023.115255",
+  "title": "Math-data integrated prediction model for ship maneuvering motion",
+  "authors": [
+    "Dong Qi",
+    "Wang Ning",
+    "Song Jialin",
+    "Hao Lizhu",
+    "Liu Shaoman",
+    "Han Bing",
+    "Qu Kai"
+  ],
+  "publication_title": "Ocean Engineering",
+  "publication_date": "2023-10-01",
+  "url": "https://doi.org/10.1016/j.oceaneng.2023.115255",
+  "keywords": [
+    "Ship maneuvering model",
+    "High-accuracy prediction",
+    "Math-data integration modeling",
+    "Data-driven prediction"
+  ],
+  "abstract": "Highly accurate motion prediction is critical to facilitate safe navigation and autonomous control of a ship. In this paper, a math-data integrated prediction (MDIP) model of ship maneuvering motion is newly developed by combining with mathematical and data-driven modules. The math part is identified by employing variable-order hydrodynamic derivatives which are derived from Taylor expansion. Using extended Kalman filter, an optimal-order mathematical prediction model is obtained. The data-driven part dwells on prediction residuals which are approximated by a least square-support vector machine. Furthermore, integration mechanisms are devised to cohere mathematical and data-driven models as a whole, by deploying summation and neural network approximation, respectively. By comparisons, it is verified that not only order selection but also math-data integration can enhance ship motion prediction accuracy, for which various maneuvering tests are analyzed. The results demonstrate that the proposed MDIP model using math-data integration offers much stronger generalization, thereby paving a new path for ship maneuvering motion prediction.",
+  "publisher": "Elsevier",
+  "field_of_study": [
+    "Marine Engineering",
+    "Autonomous Navigation"
+  ],
+  "is_data_fusion": true,
+  "classification_reason": "Uses model-level fusion combining a mathematical physics-based model and a data-driven LS-SVM model to improve ship maneuvering motion prediction accuracy"
+},
+{
+  "_id": "10.1016/j.jmsy.2023.07.007",
+  "title": "Multi-scale one-dimensional convolution tool wear monitoring based on multi-model fusion learning skills",
+  "authors": [
+    "Ma Wei",
+    "Liu Xianli",
+    "Yue Caixu",
+    "Wang Lihui",
+    "Liang Steven Y."
+  ],
+  "publication_title": "Journal of Manufacturing Systems",
+  "publication_date": "2023.0",
+  "url": "https://doi.org/10.1016/j.jmsy.2023.07.007",
+  "keywords": [
+    "Tool wear monitoring",
+    "Multi-scale convolution",
+    "Multi-model fusion",
+    "Deep learning",
+    "Sensor signals",
+    "PHM dataset"
+  ],
+  "abstract": "Effective tool wear monitoring (TWM) is crucial for accurately assessing the degree of tool wear, guiding tool replacement during actual cutting processes, ensuring stable machine operation, and improving workpiece processing quality. With the arrival of the era of Big data, more and more data-driven monitoring methods are used for TWM problems, but it also exposes the problems of over reliance on artificial feature extraction and selection, low robustness of the actual industrial environment and poor generalization of different machining processes. To solve these problems, this paper proposes a multi-scale one-dimensional convolution (MODC-MMFL) end-to-end TWM integrated network model based on multi-model fusion learning (MMFL) skills. The MMFL network is composed of deep attention temporal convolutional network (DATCN) and stacked bidirectional gate recurrent unit network (SBIGRU), parallel learning time series features related to tool wear characteristics. Experiments on the PHM and NASA tool wear datasets show the model has good predictive performance, anti-interference ability, and environmental adaptability.",
+  "publisher": "Elsevier",
+  "field_of_study": [
+    "Manufacturing Engineering",
+    "Machine Learning"
+  ],
+  "is_data_fusion": true,
+  "classification_reason": "Uses multi-sensor feature-level fusion combining signals from multiple sensors (dynamometer, accelerometer, AE sensor) and fuses features learned by two parallel deep learning models (DATCN and SBIGRU) via a fusion layer"
+},
+{
+  "_id": "10.1016/j.inffus.2023.101937",
+  "title": "UNTIE: Clustering analysis with disentanglement in multi-view information fusion",
+  "authors": [
+    "Xu Jie",
+    "Ren Yazhou",
+    "Shi Xiaoshuang",
+    "Shen Heng Tao",
+    "Zhu Xiaofeng"
+  ],
+  "publication_title": "Information Fusion",
+  "publication_date": "2023.0",
+  "url": "https://doi.org/10.1016/j.inffus.2023.101937",
+  "keywords": [
+    "Multi-view clustering",
+    "Disentanglement",
+    "Information fusion",
+    "View-common variable",
+    "View-private variable",
+    "Representation learning"
+  ],
+  "abstract": "Multi-view clustering focuses on exploring cluster structures among multiple views and is an effective approach to achieve multi-view information fusion without requiring label supervision. However, multiple views' useful and meaningless information usually is entangled and the latter might cause negative influences in the fusion process. In this paper, we research the interpretability for different information in multiple views and propose a novel method (termed UNTIE) to address their entanglement. Specifically, in UNTIE, discrete view-common variable is introduced to explore all views' common information, and continuous view-private variables are introduced to learn individual views' private information. In this way, the learned representations are disentangled and interpretable where each variable represents a single factor among multi-view data. Then, the useful information in disentangled view-common and view-private representations are leveraged to conduct comprehensive multi-view clustering, making UNTIE can explore common and complementary information from multiple views while obtaining the robustness to meaningless information. Finally, UNTIE has the ability to controllably generate samples and extensive experiments demonstrate its superior representation ability and clustering performance.",
+  "publisher": "Elsevier",
+  "field_of_study": [
+    "Machine Learning",
+    "Computer Vision"
+  ],
+  "is_data_fusion": true,
+  "classification_reason": "Uses representation-level fusion by disentangling and fusing view-common and view-private information across multiple data views to improve clustering performance"
+},
+{
+  "_id": "10.1016/j.knosys.2023.110794",
+  "title": "DFNet: Decomposition fusion model for long sequence time-series forecasting",
+  "authors": [
+    "Zhang Fan",
+    "Guo Tiantian",
+    "Wang Hua"
+  ],
+  "publication_title": "Knowledge-Based Systems",
+  "publication_date": "2023.0",
+  "url": "https://doi.org/10.1016/j.knosys.2023.110794",
+  "keywords": [
+    "Time series forecasting",
+    "Decomposition",
+    "Information fusion",
+    "Trend",
+    "Seasonality",
+    "Deep learning",
+    "Long sequence prediction"
+  ],
+  "abstract": "The study of time series forecasting is of great significance, particularly as accurate forecasting under long time-series is critical to data-driven decision-making. Although existing deep learning models (such as recurrent neural networks, long short-term memory, time convolutional networks, and transformers) exhibit excellent forecasting performances, they do not consider the unique properties of time series, particularly the trend and seasonality. To address this issue, this study proposes a DFNet model. A three-branch decomposition method is designed to obtain the trend, seasonal, and irregular components, and the least squares method is adopted to correct the seasonal data. A segmented polynomial activation function is adopted to effectively handle problems associated with negative data loss and slow operation speed. Based on the information fusion transfer mechanism, the extracted long-term dependencies are passed to each other and aggregated to enhance the coupling between sequences. Experiments on nine datasets demonstrated the effectiveness of the proposed model for long time-series prediction.",
+  "publisher": "Elsevier",
+  "field_of_study": [
+    "Machine Learning",
+    "Data Science"
+  ],
+  "is_data_fusion": true,
+  "classification_reason": "Uses feature-level fusion via an information fusion transfer mechanism that aggregates long-term dependencies extracted from trend, seasonal, and irregular components across nine benchmark time-series datasets"
+},
+{
+  "_id": "10.1109/TGRS.2022.3152854",
+  "title": "DFAF-Net: A Dual-Frequency {PolSAR} Image Classification Network Based on Frequency-Aware Attention and Adaptive Feature Fusion",
+  "authors": [
+    "Cao",
+    "Yice and Wu",
+    "Yan and Li",
+    "Ming and Liang",
+    "Wenkai and Hu",
+    "Xin"
+  ],
+  "publication_title": "IEEE Transactions on Geoscience and Remote Sensing",
+  "publication_date": "2022-02-18",
+  "url": "https://ieeexplore.ieee.org/document/9717232",
+  "keywords": [
+    "Adaptive feature fusion",
+    "Complementary information",
+    "Dual-frequency polarization synthetic aperture radar (PolSAR) image classification",
+    "Frequency-aware attention"
+  ],
+  "abstract": "Multifrequency ({MF}) polarization synthetic aperture radar ({PolSAR}) systems can obtain more abundant and continuous earth resource information than single-frequency ones and have been widely used in the remote sensing community. However, there are relatively a few researches for the fine {MF} {PolSAR} image classification, which is an important part of remote sensing image interpretation. The main focus currently is on the single-frequency part. Therefore, for dual-frequency {PolSAR} image classification, this article proposes the dual-frequency attention fusion network ({DFAF}-Net). It is based on frequency-aware attention and adaptive feature fusion to improve classification performance. First, the dual-frequency {PolSAR} data is input into the joint feature extraction ({JFE}) module to obtain the joint feature representation. Meanwhile, two frequency-aware attention block ({FAB}) modules with the same structure are constructed, which, respectively, generate frequency-specific attention masks based on the guidance of different frequency data. Subsequently, these masks are used to weigh the joint features to highlight the description of different frequency-aware importance. The activated frequency-aware features can fully mine and utilize the complementary information provided by different frequencies, thereby enhancing the discrimination of similar landcover categories. Finally, the adaptive feature fusion block ({AFFB}) module is utilized to adaptively aggregate different frequency-aware features multiple times, which can effectively eliminate information differences. The obtained fusion features are more compact within classes and separable between classes, thereby effectively improving the classification performance. Experiments on three measured spaceborne and airborne dual-frequency {PolSAR} datasets verify that {DFAF}-Net can better perceive frequency characteristics and fully mine the complementary. Therefore, the classification accuracy is effectively enhanced, and the inaccuracy of single-frequency classification can be eliminated. Meanwhile, due to the introduction of the attention module, the classification performance of the proposed {DFAF}-Net is more competitive than the related deep learning networks. Quantitatively, the overall accuracy of {DFAF}-Net on the three datasets is respectively 98.30\\%, 97.42\\%, and 99.45\\%, which is better than other methods.",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "field_of_study": [
+    "Remote Sensing"
+  ],
+  "is_data_fusion": true,
+  "classification_reason": "The study performs dual-frequency data fusion by integrating PolSAR data from two different frequency bands (e.g., C- and L-band, or C- and P-band). It applies feature-level fusion using frequency-aware attention mechanisms and an adaptive feature fusion block to exploit complementary information between frequencies for improved classification."
+},
+{
+  "_id": "10.1186/s12859-022-04584-3",
+  "title": "A data management infrastructure for the integration of imaging and omics data in life sciences",
+  "authors": [
+    "Cuellar",
+    "Luis Kuhn and Friedrich",
+    "Andreas and Gabernet",
+    "Gisela and de la Garza",
+    "Luis and Fillinger",
+    "Sven and Seyboldt",
+    "Adrian and Koch",
+    "Tobias and Zur Oven-Krockhaus",
+    "Sven and Wanke",
+    "Friederike and Richter",
+    "Sandra and Thaiss",
+    "Wolfgang M. and Horger",
+    "Marius and Malek",
+    "Nisar and Harter",
+    "Klaus and Bitzer",
+    "Michael and Nahnsen",
+    "Sven"
+  ],
+  "publication_title": "BMC Bioinformatics",
+  "publication_date": "2022-01-21",
+  "url": "https://link.springer.com/article/10.1186/s12859-022-04584-3",
+  "keywords": [
+    "Data integration",
+    "Imaging",
+    "Omics",
+    "Metadata models",
+    "Distributed systems",
+    "Service Oriented Architecture",
+    "Data management infrastructure"
+  ],
+  "abstract": "Background As technical developments in omics and biomedical imaging increase the throughput of data generation in life sciences, the need for information systems capable of managing heterogeneous digital assets is increasing. In particular, systems supporting the findability, accessibility, interoperability, and reusability ({FAIR}) principles of scientific data management. Results We propose a Service Oriented Architecture approach for integrated management and analysis of multi-omics and biomedical imaging data. Our architecture introduces an image management system into a {FAIR}-supporting, web-based platform for omics data management. Interoperable metadata models and middleware components implement the required data management operations. The resulting architecture allows for {FAIR} management of omics and imaging data, facilitating metadata queries from software applications. The applicability of the proposed architecture is demonstrated using two technical proofs of concept and a use case, aimed at molecular plant biology and clinical liver cancer research, which integrate various imaging and omics modalities. Conclusions We describe a data management architecture for integrated, {FAIR}-supporting management of omics and biomedical imaging data, and exemplify its applicability for basic biology research and clinical studies. We anticipate that {FAIR} data management systems for multi-modal data repositories will play a pivotal role in data-driven research, including studies which leverage advanced machine learning methods, as the joint analysis of omics and imaging data, in conjunction with phenotypic metadata, becomes not only desirable but necessary to derive novel insights into biological processes.",
+  "publisher": "Springer Nature",
+  "field_of_study": [
+    "Bioinformatics"
+  ],
+  "is_data_fusion": true,
+  "classification_reason": "The paper proposes an infrastructure that integrates heterogeneous data modalities (multi-omics and biomedical imaging) through metadata-level and system-level integration using a service-oriented architecture. It enables multimodal data fusion at the repository and management level."
+},
+{
+  "_id": "10.1109/TIM.2022.3214300",
+  "title": "A Lightweight {SHM} Framework Based on Adaptive Multisensor Fusion Network and Multigeneration Knowledge Distillation",
+  "authors": [
+    "Li",
+    "Sijue and Liu",
+    "Fengyi and Peng",
+    "Gaoliang and Cheng",
+    "Feng and Zhao",
+    "Benqi and Ji",
+    "Mengyu"
+  ],
+  "publication_title": "IEEE Transactions on Instrumentation and Measurement",
+  "publication_date": "2022",
+  "url": "https://ieeexplore.ieee.org/document/9928301",
+  "keywords": [
+    "Structural health monitoring",
+    "Data fusion",
+    "Multisource information",
+    "Damage detection",
+    "Feature extraction",
+    "Machine learning"
+  ],
+  "abstract": "Structural health monitoring ({SHM}) technology is of great importance to ensure the long-term and reliable operation of engineering structures. The monitoring systems for large structures are characterized by large numbers of measurement points and complex signal. In recent years, deep learning has been widely used in many fields, such as intelligent fault diagnosis and health monitoring due to its excellent feature extraction and nonlinear fitting ability. However, the existing deep networks for condition monitoring have some drawbacks. First, the multisensor information fusion is rarely considered, which is quite common in {SHM} systems. Second, most of the proposed models by current research are with large parameters and high complexity. To solve the problems mentioned above, we propose a lightweight {SHM} framework suitable for the multisensor monitoring tasks. In other words, the adaptive multisensor fusion network ({ASF}-Net) is proposed to dynamically mix with multichannel input samples and extract the efficient feature on different scales. Moreover, a joint loss function is established for network compression by transferring the knowledge from bulky teacher network to lightweight student network. Finally, to reduce the performance degradation during model compression, a multigeneration knowledge distillation ({MGKD}) strategy is proposed. The experiments on two {SHM} datasets show that the proposed method can achieve excellent classification accuracy, and model performance degradation of less than 2\\% can be obtained with at most 40.24 times less parameters and 128.82 times less computation, which has a great prospect on resource-constrained platforms.",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "field_of_study": [
+    "Engineering",
+    "Electrical & Electronic"
+  ],
+  "is_data_fusion": true,
+  "classification_reason": "The paper proposes a multisource data fusion framework integrating heterogeneous sensor data to improve measurement reliability and accuracy. The fusion enhances system robustness compared to single-source measurement approaches."
+},
+{
+  "_id": "10.1109/JSTARS.2022.3144318",
+  "title": "The Outcome of the 2021 {IEEE} {GRSS} Data Fusion Contest-Track {MSD}: Multitemporal Semantic Change Detection",
+  "authors": [
+    "Li",
+    "Zhuohong and Lu",
+    "Fangxiao and Zhang",
+    "Hongyan and Tu",
+    "Lilin and Li",
+    "Jiayi and Huang",
+    "Xin and Robinson",
+    "Caleb and Malkin",
+    "Nikolay and Jojic",
+    "Nebojsa and Ghamisi",
+    "Pedram and Haensch",
+    "Ronny and Yokoya",
+    "Naoto"
+  ],
+  "publication_title": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+  "publication_date": "2022",
+  "url": "https://ieeexplore.ieee.org/document/9690575",
+  "keywords": [
+    "Change detection",
+    "Data fusion contest",
+    "Multitemporal analysis",
+    "Remote sensing",
+    "Semantic segmentation"
+  ],
+  "abstract": "We present here the scientific outcomes of the 2021 Data Fusion Contest ({DFC}2021) organized by the Image Analysis and Data Fusion Technical Committee of the {IEEE} Geoscience and Remote Sensing Society. {DFC}2021 was dedicated to research on geospatial artificial intelligence ({AI}) for social good with a global objective of modeling the state and changes of artificial and natural environments from multimodal and multitemporal remotely sensed data toward sustainable developments. {DFC}2021 included two challenge tracks: “Detection of settlements without electricity” and “Multitemporal semantic change detection.” This article mainly focuses on the outcome of the multitemporal semantic change detection track. We describe in this article the {DFC}2021 dataset that remains available for further evaluation of corresponding approaches and report the results of the best-performing methods during the contest.",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "field_of_study": [
+    "Remote Sensing"
+  ],
+  "is_data_fusion": true,
+  "classification_reason": "The paper analyzes methods developed for the IEEE GRSS Data Fusion Contest, which explicitly requires integrating multimodal and multitemporal remote sensing datasets to perform semantic change detection."
+},
+{
+  "_id": "10.1007/s13369-021-06359-z",
+  "title": "A Multi-Source Information Fusion Evaluation Method for the Tunneling Collapse Disaster Based on the Artificial Intelligence Deformation Prediction",
+  "authors": [
+    "Wu",
+    "Bo and Qiu",
+    "Weixing and Huang",
+    "Wei and Meng",
+    "Guowang and Nong",
+    "Yu and Huang",
+    "Jingsong"
+  ],
+  "publication_title": "Arabian Journal for Science and Engineering",
+  "publication_date": "10 January 2022 (Published online)",
+  "url": "https://link.springer.com/article/10.1007/s13369-021-06359-z",
+  "keywords": [
+    "Cloud model",
+    "Support vector machine",
+    "Evidential reasoning",
+    "Tunneling collapse",
+    "Risk assessment"
+  ],
+  "abstract": "The tunneling collapse is the main engineering disaster during tunnel construction by the drilling and blasting method. It has become a key issue to accurately evaluate the tunneling collapse risk. As for assessing the tunneling collapse risk and providing basic risk-controlling strategies, this research proposes a novel multi-source information fusion approach that combines the cloud model ({CM}), the support vector machine ({SVM}), and the evidence-based reasoning ({ER}). In the data processing phase, a variety of information sources are trained by different models to analyze the collapse risk value. The judgment from each model is then evaluated according to the model's performance which is characterized by the reliability and importance weight. The judgments from different models are fused via evidential reasoning to give the overall collapse risk level. The novel approach has been successfully applied in the case of the Jinzhupa tunnel of the Pu-Yan Highway (Fujian, China). The results indicate that the proposed multi-source information fusion method has an evaluation accuracy of 87.5\\%, while the single-source information method has an accuracy of less than 70\\%. In addition, the predicted deformation of the surrounding rocks using artificial intelligence is utilized as a source of information to derive an advanced risk assessment. As a result, the decision-makers have a longer response time before a disaster occurs. Furthermore, the fusion model has excellent performance even if the risk result of different models has high conflict.",
+  "publisher": "Springer Nature",
+  "field_of_study": [
+    "Engineering",
+    "Artificial Intelligence"
+  ],
+  "is_data_fusion": true,
+  "classification_reason": "The study explicitly proposes a multi-source information fusion evaluation framework integrating deformation prediction outputs, monitoring indicators, and evidential reasoning to assess tunneling collapse risk."
+},
+{
+  "_id": "1",
+  "title": "10.1016/j.compind.2021.103501",
+  "authors": [
+    "Harmonising and integrating the Digital Twins multiverse: A paradigm and a toolset proposal."
+  ],
+  "publication_title": "Cimino, Chiara; Ferretti, Gianni and Leva, Alberto",
+  "publication_date": "Computers in Industry",
+  "url": "2021-07-27 00:00:00",
+  "keywords": [
+    "https://dl.acm.org/doi/abs/10.1016/j.compind.2021.103501"
+  ],
+  "abstract": "Digital Twin; Industry 4.0; Digital Multiverse; consistency rules; object-oriented modelling",
+  "publisher": "Digital Twins are of paramount relevance in the Industry 4.0 framework. However, the idea of Digital Twin has many different interpretations. These are tied to the intended use of a Digital Twin, thus to the viewpoint of the involved professionals (process designers, control specialists, managers, and so on). The said interpretations are often highly incompatible with one another, since they can involve as heterogeneous entities as a CAD drawing and a neural network. A convergence of Digital Twin interpretations is desirable, to take full profit of the contained knowledge. In this research we argue that this desired convergence cannot be found at the same abstraction level of the available Digital Twin interpretations, and calls for a higher one. We consequently propose a paradigm – that we name Digital Multiverse – to comprehend the major Digital Twin interpretations not only in the sense of data integration, which is the goal of promising complementary ideas like that of Asset Administration Shell, but also by establishing and enforcing consistency rules that involve both data and models. We also show some examples to support the usefulness and viability of our proposal.",
+  "field_of_study": [
+    "ACM"
+  ],
+  "is_data_fusion": false,
+  "classification_reason": "Yes"
+},
+{
+  "_id": "2",
+  "title": "10.1016/j.ecoinf.2021.101384",
+  "authors": [
+    "An Open Science approach to infer fishing activity pressure on stocks and biodiversity from vessel tracking data"
+  ],
+  "publication_title": "Coro, Gianpaolo; Ellenbroek, Anton and Pagano, Pasquale",
+  "publication_date": "Ecological Informatics",
+  "url": "2021-09-01 00:00:00",
+  "keywords": [
+    "https://colab.ws/articles/10.1016%2Fj.ecoinf.2021.101384"
+  ],
+  "abstract": "Vessel tracking data, Fisheries monitoring, Marine biodiversity, Fishing activity detection, Impact assessment",
+  "publisher": "An Open Science integration approach for vessel tracking data is presented. • It combines heterogeneous fisheries, biodiversity, and environmental FAIR data. • It infers fishing activity and risks to potentially impacted species. • The impact of Italian reduced fishing activity during the 2020 lockdown is estimated. • Three use cases demonstrate consistency and potential applications. Vessel tracking data help study the potential impact of fisheries on biodiversity and produce risk assessments. Existing workflows process vessel tracks to identify fishing activity and integrate information on species vulnerability. However, there are significant data integration challenges across the data sources needed for an integrated impact assessment due to heterogeneous nomenclatures, data accessibility issues, geographical and computational scalability of the processes, and confidentiality and transparency towards decision making authorities. This paper presents an Open Science data integration approach to use vessel tracking data in integrated impact assessments. Our approach combines heterogeneous knowledge sources from fisheries, biodiversity, and environmental observations to infer fishing activity and risks to potentially impacted species. An Open Science e-Infrastructure facilitates access to data sources and maximises the reproducibility of the results and the method's reusability across several application domains. Our method's quality is assessed through three case studies: The first demonstrates cross-dataset consistency by comparing the results obtained from two different vessel data sources. The second performs a temporal pattern analysis of fishing activity and potentially impacted species over time. The third assesses the potential impact of reduced fishing pressure on marine biodiversity and threatened species due to the 2020 COVID-19 lockdown in Italy. The method is meant to be integrated with other systems through its Open Science-oriented features and can rapidly use new sources of findable, accessible, interoperable, and reusable (FAIR) data. Other systems can use it to (i) classify vessel activity in data-limited scenarios, (ii) identify bycatch species (when catchability data are available), and (iii) study the effects of fisheries on habitats and populations’ growth.",
+  "field_of_study": [
+    "Ecological Informatics"
+  ],
+  "is_data_fusion": false,
+  "classification_reason": "Yes"
+},
+{
+  "_id": "3",
+  "title": "10.1016/j.autcon.2021.103852",
+  "authors": [
+    "Semantic framework for interdependent infrastructure resilience decision support."
+  ],
+  "publication_title": "Dao, Jicao; Ng, S. Thomas; Yang, Yifan; Zhou, Shenghua; Xu, Frank J. and Skitmore, Martin",
+  "publication_date": "Automation in Construction.",
+  "url": "2021-10-01 00:00:00",
+  "keywords": [
+    "https://www.sciencedirect.com/science/article/abs/pii/S0926580521003034"
+  ],
+  "abstract": "Semantic Web; ontology; resilience; decision support; interdependent infrastructures; urban flooding",
+  "publisher": "The increasing need for interdependent infrastructure systems to withstand natural disasters has called for the co-creation of resilience decisions to minimize the impact on society. However, issues related to information integration across different infrastructure systems hamper decision making from a system-to-systems perspective. To resolve this problem, the Semantic Web technologies are presented in this paper to serve four functions: (i) linking cross domains through ontology development to represent different domain knowledge; (ii) integrating multiple-source heterogeneous data by a common data format; (iii) retrieving useful information using semantic query language; and (iv) deriving machine automatic logical reasoning by rule languages and logic engines to provide informed resilience decision making support. The proposed framework is tested by a case scenario involving intertwined drainage-transport-building systems under the influence of urban flooding. The result indicates that the framework effectively facilitates information integration between diverse infrastructure systems and helps decision-makers by providing resilience decision-making support.",
+  "field_of_study": [
+    "Automation in Construction"
+  ],
+  "is_data_fusion": false,
+  "classification_reason": "Yes"
+},
+{
+  "_id": "4",
+  "title": "10.1007/s00158-021-02995-z",
+  "authors": [
+    "Simultaneous optimization of topology and print orientation for transversely isotropic fatigue."
+  ],
+  "publication_title": "Olesen, Asbjorn M.; Hermansen, Sebastian M. and Lund, Erik",
+  "publication_date": "Structural and Multidisciplinary Optimization",
+  "url": "2021-07-28 00:00:00",
+  "keywords": [
+    "https://link.springer.com/content/pdf/10.1007/s00158-021-02995-z.pdf"
+  ],
+  "abstract": "Topology optimization · High-cycle fatigue · Additive manufacturing · Printing direction · Manufacturing constrain",
+  "publisher": "Recent developments in additive manufacturing technologies have made it viable to manufacture the highly complex designs obtained via topology optimization. However, additively manufactured metals are complex compared to traditionally manufactured metals in that they often behave transversely isotropic, depending on the chosen print plane orientation, which further complicates design. Many of these additively manufactured metals have approximately isotropic stiffness but transversely isotropic strength properties, in particular those manufactured by powder-bed fusion methods, which are treated in this work. To account for this behavior in high-cycle fatigue, a criterion is formulated with basis in the orientation of the print plane, such that the orientation-dependent strength is taken into account. The criterion uses orientation angles, which can be included as design variables for simultaneous optimization of topology and print plane orientation. Furthermore, an improved formulation for the fatigue damage is proposed to achieve a good combination of accuracy and computational efficiency. These methods are demonstrated by solving both two- and three-dimensional problems, and the 3D design is subsequently verified using commercial finite element software.",
+  "field_of_study": [
+    "Structural and Multidisciplinary Optimization"
+  ],
+  "is_data_fusion": false,
+  "classification_reason": "No"
+},
+{
+  "_id": "5",
+  "title": "10.1007/s10994-021-06043-1",
+  "authors": [
+    "Embedding to reference t-{SNE} space addresses batch effects in single-cell classification."
+  ],
+  "publication_title": "Policar, Pavlin G. ; Strazar, Martin and Zupan, Blaz",
+  "publication_date": "Machine Learning",
+  "url": "2021-08-24 00:00:00",
+  "keywords": [
+    "https://link.springer.com/content/pdf/10.1007/s00158-021-02995-z.pdf"
+  ],
+  "abstract": "Batch effects; embedding; t-SNE; visualization; single-cell transcriptomics; data integration; domain adaptation",
+  "publisher": "Dimensionality reduction techniques, such as t-SNE, can construct informative visualizations of high-dimensional data. When jointly visualising multiple data sets, a straightforward application of these methods often fails; instead of revealing underlying classes, the resulting visualizations expose dataset-specific clusters. To circumvent these batch effects, we propose an embedding procedure that uses a t-SNE visualization constructed on a reference data set as a scaffold for embedding new data points. Each data instance from a new, unseen, secondary data is embedded independently and does not change the reference embedding. This prevents any interactions between instances in the secondary data and implicitly mitigates batch effects. We demonstrate the utility of this approach by analyzing six recently published single-cell gene expression data sets with up to tens of thousands of cells and thousands of genes. The batch effects in our studies are particularly strong as the data comes from different institutions using different experimental protocols. The visualizations constructed by our proposed approach are clear of batch effects, and the cells from secondary data sets correctly co-cluster with cells of the same type from the primary data. We also show the predictive power of our simple, visual classification approach in t-SNE space matches the accuracy of specialized machine learning techniques that consider the entire compendium of features that profile single cells.",
+  "field_of_study": [],
+  "is_data_fusion": false,
+  "classification_reason": "Yes"
+},
+{
+  "_id": "10.1016/j.inffus.2023.102098",
+  "title": "Knowledge distillation-driven semi-supervised multi-view classification",
+  "authors": [
+    "Xiaoli Wang",
+    "Yongli Wang",
+    "Guanzhou Ke",
+    "Yupeng Wang",
+    "Xiaobin Hong"
+  ],
+  "publication_title": null,
+  "publication_date": null,
+  "url": "https://doi.org/10.1016/j.inffus.2023.102098",
+  "keywords": [
+    "Multi-view learning",
+    "Semi-supervised classification",
+    "Self-knowledge distillation",
+    "Contrastive learning"
+  ],
+  "abstract": "\"Semi-supervised multi-view classification is a critical research topic that leverages the discrepancy between different views and limited annotated samples for pattern recognition in computer vision.",
+  "publisher": "Elsevier B.V.",
+  "field_of_study": [
+    "Computer Science"
+  ],
+  "is_data_fusion": true,
+  "classification_reason": "The paper addresses semi-supervised multi-view classification, which involves \"fusing multi-view information\" and \"integrating complementary information from multiple sources\" to achieve pattern recognition and classification."
+},
+{
+  "_id": "10.1016/j.inffus.2023.102100",
+  "title": "Dynamic collective opinion generation framework for digital transformation barrier analysis in the construction industry",
+  "authors": [
+    "Zhen‑Song ChenChong‑Ze Liang Ya‑Qiang Xu\nWitold Pedrycz\nMiroslaw J. Skibniewski"
+  ],
+  "publication_title": "Information Fusion",
+  "publication_date": null,
+  "url": "https://doi.org/10.1016/j.inffus.2023.102096",
+  "keywords": [
+    "Digital transformation"
+  ],
+  "abstract": "The paper proposes a dynamic collective opinion generation framework integrating COG, PEA, and SNA to evaluate barriers affecting digital transformation in the construction industry. It constructs initial weights via bi-objective optimization, updates weights through prediction with expert advice, and models barrier interactions using a social network. A case study of China State Construction Third Bureau shows talent structure, market structure, and strategic position as the most influential barriers.",
+  "publisher": "elsevier",
+  "field_of_study": [
+    "Information Fusion / Decision Science / Construction Management"
+  ],
+  "is_data_fusion": false,
+  "classification_reason": "Does not combine heterogeneous datasets. Uses expert opinion aggregation rather than dataset‑level fusion."
+},
+{
+  "_id": "10.1016/j.dsp.2023.104316",
+  "title": "DANT-GAN: A Dual Attention-Based Nested Training Network for Infrared and Visible Image Fusion",
+  "authors": [
+    "Kaixin Li Gang Liu Xinjie Gu Haojie Tang Jinxin Xiong Yao Qian"
+  ],
+  "publication_title": "Digital Signal Processing",
+  "publication_date": null,
+  "url": "https://doi.org/10.1016/j.dsp.2023.104316",
+  "keywords": [
+    "Image fusion Attention mechanism Generative teaching network Generative adversarial networks Infrared-visible image fusion"
+  ],
+  "abstract": "The paper proposes DANT‑GAN, a dual‑attention GAN framework for infrared–visible image fusion using nested training. A Local Attention Extraction (LAE) module captures local region features using self-attention, while a Global Attention Fusion (GAF) module fuses global contextual information using CBAM and depthwise separable convolution. A Generative Teaching Network (GTN) accelerates training by producing rough fused guidance images. Experiments show improved preservation of local detail, global consistency, and state‑of‑the‑art performance across multiple metrics and datasets.",
+  "publisher": "Elsevier",
+  "field_of_study": [
+    "Image Processing Computer Vision Deep Learning Signal Processing"
+  ],
+  "is_data_fusion": true,
+  "classification_reason": "Fusion occurs at the pixel/feature level between infrared and visible images using deep attention‑based GAN modules (LAE, GAF). The system integrates two different sensors to create an enriched fused output."
+},
+{
+  "_id": "10.1109/TII.2023.3248059",
+  "title": "Multisource Information Fusion for Autoformer: Soft Sensor Modeling of FeO Content in Iron Ore Sintering Process",
+  "authors": [
+    "Chong Yang; Chunjie Yang; Xinmin Zhang; Jianfeng Zhang"
+  ],
+  "publication_title": "IEEE Transactions on Industrial Informatics, December 2023",
+  "publication_date": null,
+  "url": "https://doi.org/10.1109/TII.2023.3248059",
+  "keywords": [
+    "Autoformer; FeO prediction; image feature extraction; multisource information fusion; soft sensors; iron ore sintering"
+  ],
+  "abstract": "The paper proposes a multisource information fusion Autoformer (MIF‑Autoformer) for soft‑sensor prediction of FeO content in the iron ore sintering process, integrating image features and numerical data to improve prediction accuracy. Using SE‑ResNet + shallow features + Autoformer, the model achieves the lowest error among baselines when tested on real plant data.",
+  "publisher": "IEEE",
+  "field_of_study": [
+    "Industrial Informatics / Process Engineering / Machine Learning"
+  ],
+  "is_data_fusion": true,
+  "classification_reason": "The study integrates two heterogeneous data sources (infrared thermal images and numerical process sensor data) and fuses them at both feature‑level and data‑level to produce a combined representation for FeO prediction. It explicitly applies a multisource information fusion strategy."
+},
+{
+  "_id": "10.1111/1365-2656.14012",
+  "title": "Integrated community models: A framework combining multispecies data sources to estimate the status, trends and dynamics of biodiversity",
+  "authors": [
+    "Elise F. Zipkin Jeffrey W. DoserCourtney L. Davis Wendy Leuenberger Samuel Ayebare Kayla L. Davis"
+  ],
+  "publication_title": "Journal of Animal Ecology",
+  "publication_date": "2023",
+  "url": "https://doi.org/10.1111/1365-2656.14012",
+  "keywords": [
+    "community analysis data integration hierarchical models population dynamics"
+  ],
+  "abstract": "Integrated community models combine multispecies data sources in hierarchical frameworks to estimate species‑ and community‑level dynamics. They link biological processes with observation models while accounting for uncertainties and sampling differences. The paper demonstrates applications using three case studies involving distributions, temporal trends, and demographic modeling.",
+  "publisher": "British Ecological Society (via Wiley)",
+  "field_of_study": [
+    "Ecology / Biodiversity Modeling / Statistical Ecology"
+  ],
+  "is_data_fusion": true,
+  "classification_reason": "The paper explicitly integrates multiple species and multiple heterogeneous datasets (presence‑only, detection–nondetection, counts, demographic data) into hierarchical joint models to improve inference. This meets the criteria for a data fusion methodology."
+}]

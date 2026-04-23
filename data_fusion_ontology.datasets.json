@@ -1,0 +1,636 @@
+[{
+  "_id": "6e52aa5eb7cecbf8c354bf09d1e615c0",
+  "paper_doi": "10.1109/TPAMI.2022.3232535",
+  "data_name": "VOT Benchmark Datasets",
+  "dataset_url": "https://www.votchallenge.net",
+  "method_key": "a4ce4db8-ef8e-48dd-b691-6199eb2fd3d3",
+  "data_type": [
+    "Image sequences",
+    "Video frames"
+  ],
+  "collection_method": "Manually annotated visual object tracking benchmarks collected from real-world and controlled video scenes",
+  "uncertainty": {
+    "U2_measurement": "Ground truth bounding box annotations may contain human labeling errors. Lighting changes, motion blur, and occlusion introduce measurement noise across frames."
+  },
+  "spatial_coverage": "Various real-world and controlled environments including indoor and outdoor scenes",
+  "temporal_coverage": "Various years depending on benchmark (VOT2016, VOT2018, VOT2019, GOT-10k, TrackingNet)",
+  "format": "Image sequences with JSON/XML annotations",
+  "license": "GPL 3.0",
+  "provenance": "VOT Challenge community benchmarks maintained by the Visual Object Tracking community"
+},
+{
+  "_id": "789a9d83d1c3df102e961722d054f507",
+  "paper_doi": "10.1016/j.oceaneng.2023.115255",
+  "data_name": "Ship Maneuvering Test Data (KVLCC2 / Esso Osaka)",
+  "dataset_url": "https://www.ittc.info",
+  "method_key": "6ded06eb-bccb-4dc1-8334-1207bd202ff5",
+  "data_type": [
+    "Numerical",
+    "Time-series"
+  ],
+  "collection_method": "Free-running model tests and captive maneuvering tests conducted in controlled marine environments",
+  "uncertainty": {
+    "U2_measurement": "Scale effects exist between model-scale and full-scale ship tests. Environmental disturbances during testing such as waves and currents introduce measurement noise."
+  },
+  "spatial_coverage": "Controlled marine test basins",
+  "temporal_coverage": "Collected during various maneuvering tests (zigzag and turning circle tests)",
+  "format": "Numerical time-series data",
+  "license": "Academic research use only",
+  "provenance": "Standard naval architecture benchmark datasets used for ship maneuvering research"
+},
+{
+  "_id": "ec1bf80fb3ba416ad1efe1a9588be8e9",
+  "paper_doi": "10.1016/j.jmsy.2023.07.007",
+  "data_name": "PHM 2010 Tool Wear Dataset",
+  "dataset_url": "https://www.phmsociety.org/competition/phm/10",
+  "method_key": "bc2c9693-7f8f-4723-9546-e8478b643d9a",
+  "data_type": [
+    "Numerical",
+    "Time-series",
+    "Multi-sensor"
+  ],
+  "collection_method": "Data collected from a high-speed CNC milling machine using dynamometer, accelerometer, and acoustic emission sensors across six individual cutter records",
+  "uncertainty": {
+    "U2_measurement": "Sensor noise present in real industrial environments; Gaussian noise added artificially in the study to simulate high-noise conditions, introducing uncertainty in signal measurements"
+  },
+  "spatial_coverage": "Controlled CNC milling laboratory environment",
+  "temporal_coverage": "Temporal Coverage: Not explicitly stated (data released for PHM 2010 competition)",
+  "format": "CSV",
+  "license": "Copyrighted by PHM Society",
+  "provenance": "PHM Society 2010 Data Challenge"
+},
+{
+  "_id": "12ae28f58ef4631bde683d94c6684470",
+  "paper_doi": "10.1016/j.jmsy.2023.07.007",
+  "data_name": "NASA Milling Wear Dataset",
+  "dataset_url": "https://data.nasa.gov/dataset/milling-wear",
+  "method_key": "bc2c9693-7f8f-4723-9546-e8478b643d9a",
+  "data_type": [
+    "Numerical",
+    "Time-series"
+  ],
+  "collection_method": "Experiments on a milling machine recording wear of the milling insert (VB) at different speeds, feeds, and depth of cut",
+  "uncertainty": {
+    "U2_measurement": "Variations in machine speed, feed rate, and depth of cut introduce measurement uncertainty across experimental runs"
+  },
+  "spatial_coverage": "Controlled milling laboratory environment",
+  "temporal_coverage": "Not explicitly stated",
+  "format": "ZIP (numerical data)",
+  "license": "U.S. Government Works",
+  "provenance": "NASA Open Data Portal, provided by UC Berkeley BEST Lab"
+},
+{
+  "_id": "f4dfa58a105bb148c0b3864b33c31a6b",
+  "paper_doi": "10.1016/j.inffus.2023.101937",
+  "data_name": "Multi-COIL-10",
+  "dataset_url": "https://cave.cs.columbia.edu/repository/COIL-20",
+  "method_key": "a7e5637d-afd9-4c5c-a45a-ceada7e389bf",
+  "data_type": [
+    "Image sequences",
+    "Multi-view object images"
+  ],
+  "collection_method": "Multiple views of physical objects captured from different rotational poses under controlled lighting conditions",
+  "uncertainty": {
+    "U2_measurement": "Images captured at fixed rotational intervals may miss appearance variations between poses; controlled lighting does not reflect real-world illumination uncertainty"
+  },
+  "spatial_coverage": "Controlled laboratory environment (Columbia University)",
+  "temporal_coverage": "Not explicitly stated",
+  "format": "Image files (PNG/BMP)",
+  "license": "Academic research use only (Columbia University CAVE Lab)",
+  "provenance": "Columbia Object Image Library (COIL), Columbia University CAVE Laboratory"
+},
+{
+  "_id": "0a7e289edb21dcbe2e18a08cb2fa66bc",
+  "paper_doi": "10.1016/j.knosys.2023.110794",
+  "data_name": "ETT (Electricity Transformer Temperature) — ETTh1, ETTh2, ETTm1, ETTm2",
+  "dataset_url": "https://github.com/zhouhaoyi/ETDataset",
+  "method_key": "746cfddc-42ae-4a12-9fb1-38efa7a05e29",
+  "data_type": [
+    "Numerical",
+    "Time-series"
+  ],
+  "collection_method": "Recorded from electricity transformers measuring load and temperature at hourly and 15-minute intervals",
+  "uncertainty": {
+    "U2_measurement": "Sensor drift and missing readings in transformer monitoring equipment may introduce measurement noise"
+  },
+  "spatial_coverage": "China",
+  "temporal_coverage": "July 2016 – July 2018",
+  "format": "CSV",
+  "license": "Apache 2.0",
+  "provenance": "Published by Zhou et al. (2021) alongside the Informer paper"
+},
+{
+  "_id": "71f621bfabaaae70ab79d9a89fa21c67",
+  "paper_doi": "10.1016/j.knosys.2023.110794",
+  "data_name": "Weather Dataset",
+  "dataset_url": "https://www.bgc-jena.mpg.de/wetter/",
+  "method_key": "746cfddc-42ae-4a12-9fb1-38efa7a05e29",
+  "data_type": [
+    "Numerical",
+    "Time-series",
+    "Meteorological"
+  ],
+  "collection_method": "Automated weather station sensors recording temperature, humidity, wind speed, and other atmospheric variables",
+  "uncertainty": {
+    "U2_measurement": "Weather sensor calibration errors and environmental interference introduce measurement uncertainty; missing data during equipment downtime"
+  },
+  "spatial_coverage": "Jena, Germany",
+  "temporal_coverage": "2020–2021",
+  "format": "CSV",
+  "license": "Publicly available for research use (Max Planck Institute)",
+  "provenance": "Max Planck Institute for Biogeochemistry"
+},
+{
+  "_id": "bd169011ca01c1b2ac8f86b1cccfae57",
+  "paper_doi": "10.1016/j.knosys.2023.110794",
+  "data_name": "Exchange Rate Dataset",
+  "dataset_url": "https://github.com/laiguokun/multivariate-time-series-data",
+  "method_key": "746cfddc-42ae-4a12-9fb1-38efa7a05e29",
+  "data_type": [
+    "Numerical",
+    "Time-series",
+    "Financial"
+  ],
+  "collection_method": "Daily exchange rates collected from public financial records for 8 countries",
+  "uncertainty": {
+    "U2_measurement": "Exchange rate data is subject to market volatility and reporting delays which introduce temporal measurement uncertainty"
+  },
+  "spatial_coverage": "Global",
+  "temporal_coverage": "1990–2016",
+  "format": "CSV",
+  "license": "MIT License",
+  "provenance": "Published by Lai et al. (2018), hosted on GitHub"
+},
+{
+  "_id": "1237a8c95b0f776d49fed4db6154b449",
+  "paper_doi": "10.1016/j.knosys.2023.110794",
+  "data_name": "Traffic Dataset",
+  "dataset_url": "https://github.com/laiguokun/multivariate-time-series-data",
+  "method_key": "746cfddc-42ae-4a12-9fb1-38efa7a05e29",
+  "data_type": [
+    "Numerical",
+    "Time-series"
+  ],
+  "collection_method": "Road occupancy rates recorded by sensors on San Francisco Bay Area freeways",
+  "uncertainty": {
+    "U2_measurement": "Sensor malfunctions and traffic anomalies introduce missing or erroneous readings"
+  },
+  "spatial_coverage": "San Francisco Bay Area, USA",
+  "temporal_coverage": "2015–2016",
+  "format": "CSV",
+  "license": "MIT License",
+  "provenance": "California Department of Transportation (Caltrans), hosted on GitHub by Lai et al. (2018)"
+},
+{
+  "_id": "3ec1cff79deb736252b68b5281e76139",
+  "paper_doi": "10.1016/j.knosys.2023.110794",
+  "data_name": "Electricity Dataset (ECL)",
+  "dataset_url": "https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014",
+  "method_key": "746cfddc-42ae-4a12-9fb1-38efa7a05e29",
+  "data_type": [
+    "Numerical",
+    "Time-series"
+  ],
+  "collection_method": "Electricity consumption recorded hourly from 321 clients",
+  "uncertainty": {
+    "U2_measurement": "Meter reading errors and irregular consumption patterns introduce measurement uncertainty"
+  },
+  "spatial_coverage": "Portugal",
+  "temporal_coverage": "2011–2014",
+  "format": "CSV",
+  "license": "CC BY 4.0",
+  "provenance": "UCI Machine Learning Repository"
+},
+{
+  "_id": "53f30fb2a1bb42a1efedcb6d06acd16b",
+  "paper_doi": "10.1109/TGRS.2022.3152854",
+  "data_name": "Flevoland Dataset (Flevoland_CL and Flevoland_CP), San Francisco Dataset (SanFrancisco_CL)",
+  "dataset_url": "N/A",
+  "method_key": "1de10888-d381-4a40-9f51-727c013d420d",
+  "data_type": [
+    "Satellite Imagery"
+  ],
+  "collection_method": "Airborne acquisition from NASA/JPL AIRSAR system. Spaceborne acquisition from ALOS.",
+  "uncertainty": {
+    "U2_measurement": "Fusion mitigates sensor-specific resolution and scattering limitations."
+  },
+  "spatial_coverage": "Flevoland, Eastern San Francisco",
+  "temporal_coverage": "N/A",
+  "format": "N/A",
+  "license": "© 2022 IEEE. All rights reserved.",
+  "provenance": "NASA/JPL AIRSAR; ALOS satellite; GaoFen-3 satellite"
+},
+{
+  "_id": "4782cc34330c5302a539fd4863e5d144",
+  "paper_doi": "10.1186/s12859-022-04584-3",
+  "data_name": "Multiple biomedical imaging and omics datasets",
+  "dataset_url": "N/A",
+  "method_key": "25fa227e-2111-4779-baa2-d4faa56dc1aa",
+  "data_type": [
+    "Imaging",
+    "Genomics",
+    "Multi-omics"
+  ],
+  "collection_method": "Confocal microscopy, X-ray CT, MRI/PET, Next-generation sequencing (NGS), NMR metabolomics",
+  "uncertainty": {
+    "U2_measurement": "Different imaging and omics platforms produce heterogeneous data formats, resolution scales, and metadata standards; the system harmonizes and standardizes these."
+  },
+  "spatial_coverage": "University of Tübingen",
+  "temporal_coverage": "Longitudinal clinical data",
+  "format": "N/A",
+  "license": "CC BY 4.0",
+  "provenance": "University of Tübingen; Public biomedical imaging and genomics repositories"
+},
+{
+  "_id": "c56fe833b35f3ae9439af95d764bd729",
+  "paper_doi": "10.1109/TIM.2022.3214300",
+  "data_name": "Multisource Sensor Measurement Dataset",
+  "dataset_url": "N/A",
+  "method_key": "10b6bee5-26e7-4c7e-b641-f51171c8139e",
+  "data_type": [
+    "Numerical",
+    "Temporal"
+  ],
+  "collection_method": "Multisensor instrumentation measurements.",
+  "uncertainty": {
+    "U2_measurement": "mitigates sensor-specific noise and resolution limitations."
+  },
+  "spatial_coverage": "Not geographically defined (instrument-based measurement system).",
+  "temporal_coverage": "Experimental time-series data",
+  "format": "N/A",
+  "license": "© 2022 IEEE. All rights reserved.",
+  "provenance": "Data collected via experimental instrumentation system described in the study."
+},
+{
+  "_id": "da798612996e0f8ead34033d6a3acbac",
+  "paper_doi": "10.1109/JSTARS.2022.3144318",
+  "data_name": "DFC2021 Multitemporal Semantic Change Detection Dataset",
+  "dataset_url": "N/A",
+  "method_key": "6e4449b2-1581-4a6c-9b5f-c58e6f6e9493",
+  "data_type": [
+    "Satellite Imagery",
+    "Temporal",
+    "Spatial"
+  ],
+  "collection_method": "Satellite remote sensing imagery collected across multiple time points for change detection analysis.",
+  "uncertainty": {
+    "U2_measurement": "sensor differences, spatial resolution limits, and atmospheric conditions affect measurements."
+  },
+  "spatial_coverage": "Remote sensing scenes provided in the DFC2021 contest dataset (multiple geographic locations).",
+  "temporal_coverage": "Multitemporal satellite imagery collected across different observation dates (no exact calendar range provided).",
+  "format": "N/A",
+  "license": "© 2022 IEEE. All rights reserved.",
+  "provenance": "IEEE Geoscience and Remote Sensing Society (GRSS) Data Fusion Contest organizers"
+},
+{
+  "_id": "73dff3d7947f06d0a7453d75e809a423",
+  "paper_doi": "10.1007/s13369-021-06359-z",
+  "data_name": "Tunnel Deformation Monitoring Dataset",
+  "dataset_url": "N/A",
+  "method_key": "435172f3-b401-49aa-8911-3f54471d954b",
+  "data_type": [
+    "Numerical",
+    "Temporal"
+  ],
+  "collection_method": "Tunnel deformation monitoring sensors and engineering measurements.",
+  "uncertainty": {
+    "U2_measurement": "monitoring sensors and deformation measurements contain noise and uncertainty."
+  },
+  "spatial_coverage": "Tunnel construction environment (case study engineering site).",
+  "temporal_coverage": "Monitoring data collected during tunnel construction phases.",
+  "format": "N/A",
+  "license": "© King Fahd University of Petroleum & Minerals 2021",
+  "provenance": "Tunnel engineering monitoring data collected from construction monitoring systems."
+},
+{
+  "_id": "1dda843b370873be8b4569afb42ccd36",
+  "paper_doi": "10.1016/j.compind.2021.103501",
+  "data_name": "Digital Multiverse / heterogeneous digital twin artefacts",
+  "dataset_url": "Not explicitly provided",
+  "method_key": "Digital Multiverse paradigm; consistency rules across models and data",
+  "data_type": [
+    "Heterogeneous digital twin representations (e.g.",
+    "CAD drawings",
+    "neural networks",
+    "models)"
+  ],
+  "collection_method": "Conceptual framework and examples; no explicit public dataset released in the paper",
+  "uncertainty": {
+    "U2_measurement": "The paper is a conceptual integration framework rather than a benchmark dataset release. Uncertainty arises from semantic mismatches across heterogeneous digital twin artefacts (for example CAD models, control models, and data-driven models), and the paper does not quantify how consistency rules perform across all industrial scenarios."
+  },
+  "spatial_coverage": "Not applicable / not reported",
+  "temporal_coverage": "Not applicable / not reported",
+  "format": "Heterogeneous digital artefacts",
+  "license": "Not reported",
+  "provenance": "Conceptual examples in article"
+},
+{
+  "_id": "a89d0084471b49a2e390efe167a8341a",
+  "paper_doi": "10.1016/j.ecoinf.2021.101384",
+  "data_name": "User-provided vessel trajectory input (FAP-VTI)",
+  "dataset_url": "Not explicitly provided",
+  "method_key": "FAP-VTI workflow",
+  "data_type": [
+    "Vessel trajectory table with vessel ID",
+    "speed",
+    "longitude/latitude",
+    "timestamp"
+  ],
+  "collection_method": "User-supplied CSV input to the web service",
+  "uncertainty": {
+    "U2_measurement": "User-provided vessel trajectories may contain missing timestamps, GPS/positioning errors, irregular sampling intervals, and vessel-speed inaccuracies. These issues can affect the identification of fishing behaviour and any downstream biodiversity-risk inference."
+  },
+  "spatial_coverage": "User-selected marine area",
+  "temporal_coverage": "Implicit in uploaded CSV",
+  "format": "CSV",
+  "license": "User dependent / not reported",
+  "provenance": "Input specification described in paper"
+},
+{
+  "_id": "f68734a688d85440160bfd3755250476",
+  "paper_doi": "10.1016/j.ecoinf.2021.101384",
+  "data_name": "BOEM-Marine Cadastre (BMC)",
+  "dataset_url": "https://marinecadastre.gov/",
+  "method_key": "FAP-VTI benchmark input",
+  "data_type": [
+    "Vessel tracking / GIS mapping resources"
+  ],
+  "collection_method": "Public BOEM/NOAA downloadable CSV (types 30 and 1001)",
+  "uncertainty": {
+    "U2_measurement": "AIS/vessel tracking records may include coverage gaps, duplicated pings, positioning errors, and incomplete vessel metadata. Coastal reception quality and filtering choices can introduce uncertainty in the benchmark fishing-pressure estimates."
+  },
+  "spatial_coverage": "Northwest Atlantic benchmark area; broader source spans Alaska to Gulf of Mexico",
+  "temporal_coverage": "March–May 2015 benchmark in paper",
+  "format": "CSV",
+  "license": "Not reported in paper",
+  "provenance": "Public source used in benchmark case study"
+},
+{
+  "_id": "4593ec3d26dd922c27b332152a0d5e35",
+  "paper_doi": "10.1016/j.ecoinf.2021.101384",
+  "data_name": "Global Fishing Watch (GFW)",
+  "dataset_url": "https://globalfishingwatch.org/",
+  "method_key": "FAP-GFW benchmark input",
+  "data_type": [
+    "Aggregated commercial fishing activity data"
+  ],
+  "collection_method": "Satellite, AIS-terrestrial, and VIIRS data; fishing activity pre-classified by machine-learning model",
+  "uncertainty": {
+    "U2_measurement": "Fishing-activity estimates are inferred from multiple remote-sensing and tracking streams (satellite AIS, terrestrial AIS, and VIIRS), so misclassification and coverage gaps may occur. Spatial aggregation at grid level can smooth local fishing patterns and introduce uncertainty in change-detection results."
+  },
+  "spatial_coverage": "Global source; Northwest Atlantic and Italy cases in paper",
+  "temporal_coverage": "Embedded 2012–2016 dataset; March–May 2015 benchmark; March–April 2020 derived CSV",
+  "format": "Aggregated grids/raster products (0.01° and 0.1°); derived CSV in paper",
+  "license": "Free-to-use for scientific purposes (as stated in paper)",
+  "provenance": "Public source used in benchmark and temporal case studies"
+},
+{
+  "_id": "01608305ed6712aa93481c5660f2f1f0",
+  "paper_doi": "10.1016/j.ecoinf.2021.101384",
+  "data_name": "Ocean Biodiversity Information System (OBIS)",
+  "dataset_url": "https://obis.org/",
+  "method_key": "Biodiversity enrichment",
+  "data_type": [
+    "Species occurrence records and taxonomic information"
+  ],
+  "collection_method": "Geospatial query per fishing cell via the robis R package",
+  "uncertainty": {
+    "U2_measurement": "Biodiversity occurrence records are affected by uneven sampling effort, taxonomic inconsistencies, georeferencing errors, and temporal sparsity. Query-window choices around the fishing period can change which species are linked to each fishing cell."
+  },
+  "spatial_coverage": "Fishing cells in study area",
+  "temporal_coverage": "Occurrence Time Range years before and after vessel dataset (default 5 years; experiments used 8)",
+  "format": "Queried occurrence records / tables",
+  "license": "Not reported in paper",
+  "provenance": "FAIR enrichment source named in methodology"
+},
+{
+  "_id": "81568490b0ecb1b11752e4243108989c",
+  "paper_doi": "10.1016/j.ecoinf.2021.101384",
+  "data_name": "IUCN Red List",
+  "dataset_url": "https://www.iucnredlist.org/",
+  "method_key": "Threat-status enrichment",
+  "data_type": [
+    "Species risk/vulnerability status"
+  ],
+  "collection_method": "Threat validation against IUCN Red List through the biodiversity enrichment step",
+  "uncertainty": {
+    "U2_measurement": "Threat-status matching depends on correct species-name harmonisation with the Red List. Assessment cycles, synonym issues, and lag between species observations and Red List updates may introduce uncertainty in vulnerability attribution."
+  },
+  "spatial_coverage": "Species found in study cells",
+  "temporal_coverage": "Current to query time / version not specified in paper",
+  "format": "Status indicator data",
+  "license": "Not reported in paper",
+  "provenance": "FAIR enrichment source named in methodology"
+},
+{
+  "_id": "835d48b84ad6992f8eee10866d4a07bd",
+  "paper_doi": "10.1016/j.ecoinf.2021.101384",
+  "data_name": "FAO ASFIS collection",
+  "dataset_url": "https://www.fao.org/fishery/en/collection/asfis/en",
+  "method_key": "Fisheries taxonomy filtering",
+  "data_type": [
+    "Fisheries/aquaculture species taxonomy"
+  ],
+  "collection_method": "CSV table updated to 2020 and hosted on D4Science platform storage for computation",
+  "uncertainty": {
+    "U2_measurement": "Taxonomic filtering depends on the completeness and currency of the ASFIS species list. Name-matching ambiguities, synonym handling, and update lag can affect whether biodiversity records are classified as fisheries-relevant species."
+  },
+  "spatial_coverage": "Global taxonomy",
+  "temporal_coverage": "Updated to 2020",
+  "format": "CSV",
+  "license": "Not reported in paper",
+  "provenance": "D4Science-hosted copy of FAO ASFIS"
+},
+{
+  "_id": "b966217ce213ab5412ff9da696f15093",
+  "paper_doi": "10.1016/j.ecoinf.2021.101384",
+  "data_name": "Global Record of Stocks and Fisheries (GRSF)",
+  "dataset_url": "https://i-marine.d4science.org/web/grsf/data-catalogue",
+  "method_key": "Stock linkage / SPARQL lookup",
+  "data_type": [
+    "Global stock distributions and stock reference data"
+  ],
+  "collection_method": "Direct query to the SPARQL endpoint of the GRSF semantic knowledge base",
+  "uncertainty": {
+    "U2_measurement": "Stock linkage through the semantic knowledge base may be incomplete for some taxa or regions. Ontology alignment choices and identifier mismatches can create uncertainty when distinguishing stock-associated species from non-stock species."
+  },
+  "spatial_coverage": "Global",
+  "temporal_coverage": "Not versioned in paper",
+  "format": "Semantic knowledge base / SPARQL",
+  "license": "Not reported in paper",
+  "provenance": "i-Marine / D4Science semantic knowledge base"
+},
+{
+  "_id": "71182061c09a796e7bafe3a056cc9d06",
+  "paper_doi": "10.1016/j.ecoinf.2021.101384",
+  "data_name": "Copernicus Marine Environment Monitoring Service (CMEMS)",
+  "dataset_url": "https://marine.copernicus.eu/",
+  "method_key": "Environmental context enrichment",
+  "data_type": [
+    "Marine environmental data"
+  ],
+  "collection_method": "Integrated as FAIR environmental data through the D4Science e-infrastructure",
+  "uncertainty": {
+    "U2_measurement": "Environmental context layers can differ in spatial resolution, temporal granularity, and model assumptions. Interpolation, regridding, and dataset-version differences may introduce uncertainty when linking ocean conditions to fishing cells."
+  },
+  "spatial_coverage": "Marine / global-regional",
+  "temporal_coverage": "Not specified in paper",
+  "format": "Not specified in paper",
+  "license": "Not reported in paper",
+  "provenance": "FAIR enrichment source named in methodology"
+},
+{
+  "_id": "8a55bd9a859475752055245d964ea07f",
+  "paper_doi": "10.1016/j.autcon.2021.103852",
+  "data_name": "Urban flooding resilience knowledge graph / case data for drainage-transport-building systems",
+  "dataset_url": null,
+  "method_key": "Ontology development + RDF conversion + semantic queries + rule-based reasoning",
+  "data_type": [
+    "Heterogeneous cross-domain infrastructure data (drainage",
+    "transport",
+    "building)"
+  ],
+  "collection_method": "Ontologies link cross-domain knowledge; heterogeneous data are converted into a common RDF format and queried/reasoned for decision support",
+  "uncertainty": {
+    "U2_measurement": "The framework integrates heterogeneous drainage, transport, and building information through ontology mapping and rule-based reasoning. Uncertainty arises from incomplete source data, cross-domain schema mismatches, and the dependence of inferred resilience decisions on the quality and completeness of semantic relationships."
+  },
+  "spatial_coverage": "Urban flooding case scenario",
+  "temporal_coverage": "Event / scenario-based; not explicitly reported",
+  "format": "RDF / OWL / SPARQL / rule language",
+  "license": "Not reported",
+  "provenance": "Framework case scenario in paper"
+},
+{
+  "_id": "7f0e7ef5711eb0e6da92c05d80271f0f",
+  "paper_doi": "10.1007/s00158-021-02995-z",
+  "data_name": "Topology Optimization Benchmark / Simulation Data",
+  "dataset_url": "Not explicitly provided",
+  "method_key": "Topology optimization, simulation-driven design",
+  "data_type": [
+    "Simulation data",
+    "numerical models"
+  ],
+  "collection_method": "Generated via computational simulations",
+  "uncertainty": {
+    "U2_measurement": "Model assumptions, discretization errors, and numerical instability may introduce uncertainty"
+  },
+  "spatial_coverage": "Design domain (engineering structures)",
+  "temporal_coverage": "Simulation-dependent",
+  "format": "Numerical arrays / simulation outputs",
+  "license": "Not specified",
+  "provenance": "Derived from simulation-based optimization experiments"
+},
+{
+  "_id": "0da0ead5b1054a107c801436b4c9a2c2",
+  "paper_doi": "10.1007/s10994-021-06043-1",
+  "data_name": "Machine Learning Benchmark / Training Data",
+  "dataset_url": "Not explicitly provided",
+  "method_key": "Machine learning, optimization, model training",
+  "data_type": [
+    "Tabular / training datasets"
+  ],
+  "collection_method": "Pre-collected benchmark datasets and experiments",
+  "uncertainty": {
+    "U2_measurement": "Bias in training data, overfitting risk, and noise in input features may affect model performance"
+  },
+  "spatial_coverage": "Varies by dataset",
+  "temporal_coverage": "Dataset-specific",
+  "format": "CSV / structured data",
+  "license": "Varies",
+  "provenance": "Standard ML benchmark datasets used in experiments"
+},
+{
+  "_id": "bca9051d8429223368560de9666a0132",
+  "paper_doi": "10.1016/j.inffus.2023.102096",
+  "data_name": "Public sentiment tweets from X",
+  "dataset_url": "N/a",
+  "method_key": "06c83b43-949f-4764-9ef7-ac41af3a0586",
+  "data_type": [
+    "Numerical financial data"
+  ],
+  "collection_method": null,
+  "uncertainty": {
+    "U2_measurement": "Sampling bias:"
+  },
+  "spatial_coverage": "n/a",
+  "temporal_coverage": "n/a",
+  "format": "Models use processed numerical/text matrices,",
+  "license": "n/a",
+  "provenance": "Tweets collected from X"
+},
+{
+  "_id": "97780e33e0415052237c5a24bb8af571",
+  "paper_doi": "10.1016/j.inffus.2023.102100",
+  "data_name": "Expert Evaluation Dataset for Digital Transformation Barriers",
+  "dataset_url": null,
+  "method_key": "1684b687-d3c6-401e-b7d7-45baa84f1091",
+  "data_type": [
+    "Subjective probability distributions"
+  ],
+  "collection_method": "Expert interviews (10 domain experts, three yearly rounds 2020–2022)",
+  "uncertainty": {
+    "U2_measurement": "Small number of experts (n=10)"
+  },
+  "spatial_coverage": "China — China State Construction Third Engineering Bureau",
+  "temporal_coverage": "2020–2022",
+  "format": "raw expert responses",
+  "license": "n/a",
+  "provenance": "Collected directly from organizational experts involved in digital transformation within China Construction Third Bureau."
+},
+{
+  "_id": "3ab0382c1ab243237afd39fea6d6c07b",
+  "paper_doi": "10.1016/j.dsp.2023.104316",
+  "data_name": "TNO Infrared–Visible Image Fusion Dataset",
+  "dataset_url": "https://figshare.com/articles/dataset/TNO_Image_Fusion_Dataset/1008029",
+  "method_key": "d8b2d881-23d1-466c-83a0-74f1ad99b8f0",
+  "data_type": [
+    "Infrared images Visible RGB/grayscale images"
+  ],
+  "collection_method": "Military-grade IR sensors and visible cameras recorded simultaneously in outdoor environments.",
+  "uncertainty": {
+    "U2_measurement": "Infrared/visible misalignment due to different sensor positions."
+  },
+  "spatial_coverage": "Outdoor scenes in various military/urban environments",
+  "temporal_coverage": "Static captures, no temporal sequences.",
+  "format": "PNG/JPG pairs",
+  "license": "Open research dataset (public domain)",
+  "provenance": "Captured and released by TNO Human Factors, Netherlands."
+},
+{
+  "_id": "be53640032e8f8b6b4dff9f2673a9f7c",
+  "paper_doi": "10.1109/TII.2023.3248059",
+  "data_name": "Infrared Thermal Image Sequence of Sinter Cross‑Section",
+  "dataset_url": null,
+  "method_key": "efece898-32da-41f7-8ee5-1c483f24a1e9",
+  "data_type": [
+    "Image (Infrared thermal imagery)"
+  ],
+  "collection_method": "Online infrared thermal imager, sampling key frames using temperature‑sum peaks",
+  "uncertainty": {
+    "U2_measurement": "Data Uncertainty — Measurement"
+  },
+  "spatial_coverage": "Sintering machine tail region (fixed camera field: 128×640 pixels)",
+  "temporal_coverage": "Approximately one frame per sinter fall cycle across December 2021 (2379 samples)",
+  "format": "Infrared heatmap arrays",
+  "license": "Not publicly released; industrial proprietary data",
+  "provenance": "Collected via industrial control system; aligned using backtracking method."
+},
+{
+  "_id": "aec188254b985eaf3126bdee1f67653d",
+  "paper_doi": "10.1111/1365-2656.14012",
+  "data_name": "Breeding Bird Survey (BBS)",
+  "dataset_url": "https://www.pwrc.usgs.gov/bbs",
+  "method_key": "2096b91c-f368-493f-bcad-cb8e26e166e7",
+  "data_type": [
+    "Detection–nondetection (structured)"
+  ],
+  "collection_method": "50 roadside stops per 39.2 km survey route, aggregated into spatial replicates.",
+  "uncertainty": {
+    "U2_measurement": "Data Uncertainty — Measurement):Detection varies strongly with observer skill.Time‑of‑day effects.Roadside bias (not representative of interior forest).Some species too rare for reliable detection."
+  },
+  "spatial_coverage": "11 U.S. Northeast states",
+  "temporal_coverage": "Breeding season, year 2017",
+  "format": "Tabular detections (0/1)",
+  "license": "Public USGS dataset",
+  "provenance": "Collected under standard USGS BBS protocol."
+}]
